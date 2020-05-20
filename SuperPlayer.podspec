@@ -32,15 +32,15 @@ Pod::Spec.new do |spec|
         s.private_header_files = 'SuperPlayer/Utils/TXBitrateItemHelper.h', 'SuperPlayer/Views/SuperPlayerView+Private.h'
         s.resource = 'SuperPlayer/Resource/*'
 #如果要使用cocopods管理的TXLiteAVSDK_Player，就不注释这一行
-        s.dependency 'TXLiteAVSDK_Player', '= 7.2.8932'
+#         s.dependency 'TXLiteAVSDK_Player', '= 7.2.8932'
 #如果要使用最新的TXLiteAVSDK_Player，就不注释这一行
         #s.vendored_framework = "Frameworks/TXLiteAVSDK_Player.framework"
     end
-#     spec.subspec "Professional" do |s|
-#         s.dependency 'SuperPlayer/Core'
-#         s.dependency 'TXLiteAVSDK_Professional', '~> 5.2.5539'
-# #        s.vendored_framework = "Frameworks/TXLiteAVSDK_Professional.framework"
-#     end
+    spec.subspec "Professional" do |s|
+        s.dependency 'SuperPlayer/Core'
+        s.dependency 'TXLiteAVSDK_Professional', '~> 5.2.5539'
+#        s.vendored_framework = "Frameworks/TXLiteAVSDK_Professional.framework"
+    end
 #     spec.subspec "Enterprise" do |s|
 #         s.dependency 'SuperPlayer/Core'
 #         s.dependency 'TXLiteAVSDK_Enterprise', '~> 5.2.5539'
